@@ -19,11 +19,11 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
-<body style="background-color: #502F4C;">
+<body style="background-color: #1b609f;">
 <body>
-<nav class="navbar navbar-light fixed-top" style="background-color: #8bdbf5;">
+<nav class="navbar navbar-light fixed-top" style="background-color: white;">
   <div class="container-fluid">
-    <a class="navbar-brand barralogo" href="/home" style="color: #70587c;">XBrainMode</a>
+    <a class="navbar-brand barralogo" href="/home" style="color: #1B609F;">XBrainMode</a>
     <button  class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon bg-light"></span>
     </button>
@@ -62,7 +62,7 @@
   </div>
 </nav>
 </body>
-        <main class="d-flex justify-content-center align-middle" style="background-color: #ABDAE1;height: 30px;">
+        <main class="d-flex justify-content-center align-middle" style="background-color: #F9F9F9;height: 30px;">
             @yield('content')
         </main>
     </div>
