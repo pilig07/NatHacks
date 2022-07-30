@@ -11,15 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/924c212a80.js" crossorigin="anonymous"></script>
     <!-- Styles -->
     <style type="text/css">
         .body {
             width: 100%;
-            background-color: white;
+            background-color: #502F4C;
         }
         .barralogo{
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
             
         }
     </style>
@@ -29,15 +30,15 @@
 </head>
 
 <body>
-<nav class="navbar navbar-light  bg-dark fixed-top">
+<nav class="navbar navbar-light fixed-top" style="background-color: #8bdbf5;">
   <div class="container-fluid">
-    <a class="navbar-brand barralogo" href="/home" style="color: #8bdbf5;">Terracota Hábitat</a>
+    <a class="navbar-brand barralogo" href="/home" style="color: #70587c;">XBrainMode</a>
     <button  class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon bg-light"></span>
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -46,23 +47,22 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/register">Registrate</a>
+            <a class="nav-link" href="/register">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login">Iniciar Sesión</a>
+            <a class="nav-link" href="/login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/catalogo">Catálogo</a>
+            <a class="nav-link" href="/catalogo">Games</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acerca de
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Team</a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="/nosotros">Nosotros</a></li>
+              <li><a class="dropdown-item" href="/nosotros">About Us</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="/contactanos">Contáctanos</a></li>
+              <li><a class="dropdown-item" href="/contactanos">Contact</a></li>
             </ul>
           </li>
         </ul>
