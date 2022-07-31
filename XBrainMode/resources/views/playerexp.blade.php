@@ -51,7 +51,6 @@
 </head>
 
 <body>
-  @include ('layout')
   @if (Auth::guest())
 @include('layout')            
   @else

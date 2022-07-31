@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/924c212a80.js" crossorigin="anonymous"></script>
 
-  <title>XBM(Player) </title>
+  <title>XBM(Developer) </title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,6 @@
 </head>
 
 <body>
-  @include ('layout')
   @if (Auth::guest())
 @include('layout')            
   @else

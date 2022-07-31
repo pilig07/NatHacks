@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\games;
+use App\Models\images;
+
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
@@ -25,5 +29,12 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function catalog()
+    {
+        $games= games::all();
+        $img= images::all();
+        return view('catalog')->with('games',$games)->with('imag',$img);
     }
 }

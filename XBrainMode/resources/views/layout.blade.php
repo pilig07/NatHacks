@@ -37,7 +37,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
       <li class="nav-item" style="color: white;">
-            <a class="nav-link active" aria-current="page" href="/welcome" style="color: white;">Home</a>
+            <a class="nav-link active" aria-current="page" href="/" style="color: white;">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/login" style="color: white;">Login</a>
