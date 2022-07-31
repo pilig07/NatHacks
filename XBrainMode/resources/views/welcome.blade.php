@@ -55,8 +55,8 @@
   <div class="container-fluid border-bottom text-center" style="height:630px;background-color:#000307;">
     <img src="MindControl-1200x630_social.jpg" class="img-fluid" alt="entrega de llaves">
     <div class="texto1">First ever NeuroTech Gaming Hub</div>
-    <button type="button" class="btn btn-secondary b1 btn-lg" style="background-color: #143f9a;">Player</button>
-    <button type="button" class="btn btn-secondary b1 btn-lg" style="background-color: #143f9a;">Developer</button>
+    <button type="button" class="btn btn-secondary b1 btn-lg" style="background-color: #143f9a;"> <a class="nav-link" href="/playerexp" style="text-decoration: none;color:white">Player</a></button>
+    <button type="button" class="btn btn-secondary b1 btn-lg" style="background-color: #143f9a;"> <a class="nav-link" href="/devexp" style="text-decoration:none;color:white;">Developer</a></button>
   </div>
   <div class="container-fluid" style="background-color: #DEE7E7">
     <section class="py-2 text-center container">
