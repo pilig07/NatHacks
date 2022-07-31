@@ -37,22 +37,25 @@
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
       <li class="nav-item" style="color: white;">
-            <a class="nav-link active" aria-current="page" href="/welcome">Home</a>
+            <a class="nav-link active" aria-current="page" href="/welcome" style="color: white;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/register">Register</a>
+            <a class="nav-link" href="/login" style="color: white;">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login">Login</a>
+            <a class="nav-link" href="/catalog" style="color: white;">Games</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/catalog">Games</a>
+            <a class="nav-link" href="/playerexp" style="color: white;">Player</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link" href="/devexp" style="color: white;">Developer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact Us</a>
+            <a class="nav-link" href="/about" style="color: white;">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact" style="color: white;">Contact Us</a>
           </li>
       </ul>
     </div>
