@@ -47,7 +47,6 @@
 @if (Auth::guest())
 @include('layout')            
   @else
-  
   @if(Auth::user()->idRol==1)
         @include ('layoutPlayer')
     @else    
