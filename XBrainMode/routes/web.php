@@ -23,4 +23,5 @@ Route::get('/devexp', function () { return view('devexp');});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/catalogo', 'HomeController@catalog');
+Route::get('/register/{id}','HomeController@register');
