@@ -51,14 +51,14 @@
 </head>
 
 <body>
-  @if (Auth::guest())
+@if (Auth::guest())
 @include('layout')            
   @else
   
   @if(Auth::user()->idRol==1)
-        @include ('layoutUs')
+        @include ('layoutPlayer')
     @else    
-        @include ('layoutAdmin')
+        @include ('layoutDeveloper')
     @endif   
   @endif
     <div class="p-5 mb-4 bg-light rounded-3">
@@ -79,7 +79,7 @@
     <li class="list-group-item">Rate the games and add some feedback for the developers</li>
     <li class="list-group-item">Add the games that you like the most to you favorite list!</li>
     <li class="list-group-item">Games created specifically for the BCI</li>
-    <li class="list-group-item card-title"><a class="link-secondary" href="/register" style="color:#401F3E;">Register</a></li>
+    <li class="list-group-item card-title"><a class="link-secondary" href="/register/{{1}}" style="color:#401F3E;">Register</a></li>
   </ul>
   </div>
 </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\games;
 use App\Models\images;
+use App\User;
 
 use Illuminate\Support\Facades\Auth;
 
@@ -36,5 +37,10 @@ class HomeController extends Controller
         $games= games::all();
         $img= images::all();
         return view('catalog')->with('games',$games)->with('imag',$img);
+    }
+
+    public function register($id)
+    {
+        return view('register')->with('id',$id);
     }
 }

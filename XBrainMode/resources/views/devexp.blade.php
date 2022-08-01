@@ -79,7 +79,7 @@
     <li class="list-group-item">Obtain real feedback to improve yourself</li>
     <li class="list-group-item">When you upload this an specialist is going to make you know if your game can be used for the BCI</li>
     <li class="list-group-item">Obtain rates, so you can know what other thinks about it!</li>
-    <li class="list-group-item card-title"><a class="link-secondary" href="/register/{{1}}" style="color:#401F3E;">Register</a></li>
+    <li class="list-group-item card-title"><a class="link-secondary" href="/register/{{2}}" style="color:#401F3E;">Register</a></li>
   </ul>
   </div>
 </div>

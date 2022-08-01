@@ -44,7 +44,16 @@
 </head>
 
 <body>
-  @include ('layout')
+@if (Auth::guest())
+@include('layout')            
+  @else
+  
+  @if(Auth::user()->idRol==1)
+        @include ('layoutPlayer')
+    @else    
+        @include ('layoutDeveloper')
+    @endif   
+  @endif
   <div class="container-fluid border-bottom text-center" style="background-color: white">
     <div class="texto1">First ever NeuroTech Gaming Hub</div>
   </div>
