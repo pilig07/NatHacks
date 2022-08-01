@@ -24,7 +24,7 @@
     }
 
     .texto1 {
-      color: #143f9a;
+      color: #401F3E;
       font-family: 'Fira Sans', sans-serif;
       position: relative;
       font-size: 60px;
@@ -63,79 +63,46 @@
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">Want to play?</h1>
     </section>
-    <div class="album py-3">
-      <div class="container-fluid" style="background-color: #DEE7E7">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="album py-6">
+      <div class="container-fluid" style="background-color: #401F3E">
+        <div class="row row-cols-1  row-cols-md-3 g-3" style="height: 380px;">
           <div class="col">
             <div class="card shadow-sm">
-              <img src="casa1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="casa 1">
+              <img src="flappy.png" class="bd-placeholder-img card-img-top" width="100%" height="225">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Detalles en catálogo</small>
+                  <small class="text-muted"><a href="/flappy" class="stretched-link">Play</a></small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="casa2.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="casa 1">
+              <img src="jump.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">"2D adventure,a side-scrolling landscape game, avoiding obstacles </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Detalles en catálogo</small>
+                  <small class="text-muted">Play</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="casa3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="casa 1">
+              <img src="plane.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">A 3D Unity Flight game of avoiding obstacles by controlling the plane's pitch.</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Detalles en catálogo</small>
+                  <small class="text-muted">Play</small>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="casa4.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="casa 1">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Detalles en catálogo</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="casa5.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="casa 1">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Detalles en catálogo</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="casa6.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="casa 1">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Detalles en catálogo</small>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
+    <br><br><br>
     @include('footer')
 </body>

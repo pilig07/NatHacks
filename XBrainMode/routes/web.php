@@ -29,6 +29,6 @@ Auth::routes();
 
 Route::get('/catalog',[App\Http\Controllers\GamesController::class, 'catalog']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/register/{id}',[App\Http\Controllers\HomeController::class, 'register']);
-Route::post('/saveUsr','HomeController@saveUsr');
+Route::get('/register/{id}',[App\Http\Controllers\Controller::class, 'register']);
+Route::post('/saveUsr',[App\Http\Controllers\HomeController::class, 'saveUsr']);
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

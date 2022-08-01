@@ -34,11 +34,6 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function register($id)
-    {
-        return view('register')->with('id',$id);
-    }
-
     public function saveUsr(Request $request)
     {
         $usur=new User();
