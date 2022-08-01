@@ -22,6 +22,8 @@ Route::get('/', function () {
 
 Route::get('/playerexp', function () { return view('playerexp');});
 Route::get('/devexp', function () { return view('devexp');});
+Route::get('/aboutus', function () { return view('aboutus');});
+Route::get('/contact', function () { return view('contact');});
 
 Auth::routes();
 

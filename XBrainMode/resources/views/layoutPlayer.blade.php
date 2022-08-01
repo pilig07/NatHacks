@@ -53,13 +53,13 @@
             <a class="nav-link" href="/catalog" style="color: white;">Community</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about" style="color: white;">About Us</a>
+            <a class="nav-link" href="/aboutus" style="color: white;">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact" style="color: white;">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" style="color: white;">Logout</a>
+            <a class="nav-link" href="{{ url('/logout') }}" style="color: white;">Logout</a>
           </li>
         </ul>
       </div>

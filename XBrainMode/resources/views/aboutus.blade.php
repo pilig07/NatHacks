@@ -21,6 +21,7 @@
             width: 100%;
             background-color: white;
         }
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -28,9 +29,11 @@
             -moz-user-select: none;
             user-select: none;
         }
+
         .container {
             max-width: 960px;
         }
+
         /*
  * Custom translucent site header
  */
@@ -39,17 +42,21 @@
             -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);
         }
+
         .site-header a {
             color: #8e8e8e;
             transition: color .15s ease-in-out;
         }
+
         .site-header a:hover {
             color: #fff;
             text-decoration: none;
         }
+
         .flex-equal>* {
             flex: 1;
         }
+
         @media (min-width: 768px) {
             .flex-md-equal>* {
                 flex: 1;
@@ -62,43 +69,20 @@
 </head>
 
 <body>
-@if (Auth::guest())
-@include('layout')            
-  @else
-  
-  @if(Auth::user()->idRol==1)
-        @include ('layoutUs')
-    @else    
-        @include ('layoutAdmin')
-    @endif   
-  @endif
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 fw-normal">About Us</h1>
-            <p class="lead fw-normal">Nosotros somos tu inmobiliaria de confianza donde te ofrecemos Compra-Venta,Renta,Casas,Departamentos, Locales y Renta de casas amuebladas</p>
-        </div>
-    </div>
-    <div class="b-example-divider"></div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-            <div class="my-3 py-3">
-                <h2 class="display-5">Encontraremos el lugar perfecto para ti</h2>
-                <p class="lead">Con nuestro amplio catálogo de propiedades, la locación no será un problema</p>
-            </div>
-        </div>
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-                <h2 class="display-5">¿Te preocupa el presupuesto?</h2>
-                <p class="lead">Tranquilo... Tenemos muchas opciones para ti,nos adapatamos a tu presupuesto</p>
-            </div>
-        </div>
-    </div>
-    <div class="b-example-divider"></div>
-    <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold">Nuestra Historia</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Somos un pequeño grupo de agentes que desde hace 10 años nos hemos encaragdo de encontrar el lugar perfecto para que vivas ya se de manera permanente o temporal, todo esto dentro del estado de San Luís Potosí.</p>
-        </div>
+    @if (Auth::guest())
+    @include('layout')
+    @else
+    @if(Auth::user()->idRol==1)
+    @include ('layoutPlayer')
+    @else
+    @include ('layoutDeveloper')
+    @endif
+    @endif
+    <h1 class="display-4 fw-normal text-center">About Us</h1>
+    <div class="overflow-hidden p-3 p-md-4 m-md-3 bg-light">
+        <img src="IMG_3196.jpeg" class="rounded float-start" alt="team photo" style="height: 400px;">
+        <p class="lead fw-normal text-center text-justify" style="top:100px;position:relative">We are a group of young students with a desire to learn and an affinity for new technologies. The team is made up of students from Mexico, Nigeria, Bangladesh and India. With the intention of forming a community with aspirations and love for the development of video games with the intention of developing what BCI offers for the future. </p>
+
     </div>
     <br>
     <br>

@@ -26,14 +26,12 @@
 </head>
 
 <body>
-
    <div class="container-fluid text-center" style="background-color: #401F3E;">
   <div class="row align-items-start">
     <div class="col">
     <span class="text-muted">© 2022 Company, Inc</span>
     </div>
     <div class="col">
-
     </div>
     <div class="col">
     <a href="/" class="text-muted"><i class="fas fa-home"></i></a>
@@ -41,5 +39,4 @@
     </div>
    </div>
 </body>
-
 </html>

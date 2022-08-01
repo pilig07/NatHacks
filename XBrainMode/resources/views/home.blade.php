@@ -53,19 +53,6 @@
         @include ('layoutDeveloper')
     @endif   
   @endif
-
-  @if (session('status'))
-    <div class="alert alert-success" role="alert">
-        {{ session('status') }}
-    </div>
-    @endif
-    {{ __('You are logged in!') }}
-
-    @if ($message = Session::get('success'))
-    <div id="successMessage" class="alert alert-success alert-block">
-        <strong>{{ $message }}</strong>
-    </div>
-    @endif
     <br>
   <div class="container-fluid border-bottom text-center" style="background-color: white">
     <div class="texto1">First ever NeuroTech Gaming Hub</div>

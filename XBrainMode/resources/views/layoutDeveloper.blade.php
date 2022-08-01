@@ -46,7 +46,10 @@
             <a class="nav-link" href="/upload" style="color: white;">Upload</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about" style="color: white;">About Us</a>
+            <a class="nav-link" href="/upload" style="color: white;">My Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus" style="color: white;">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact" style="color: white;">Contact Us</a>
