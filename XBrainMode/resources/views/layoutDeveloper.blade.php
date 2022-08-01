@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>XBrainMode(Home) </title>
+    <title>XBrainMode(Home Developer) </title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,26 +36,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+    <li class="nav-item nav-link" style="color: white;">
+              Hello! {{ Auth::user()->name }}
+          </li>
       <li class="nav-item" style="color: white;">
             <a class="nav-link active" aria-current="page" href="/" style="color: white;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login" style="color: white;">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/catalog" style="color: white;">Games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/playerexp" style="color: white;">Player</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/devexp" style="color: white;">Developer</a>
+            <a class="nav-link" href="/upload" style="color: white;">Upload</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/about" style="color: white;">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact" style="color: white;">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/logout') }}" style="color: white;">Logout</a>
           </li>
       </ul>
     </div>

@@ -50,6 +50,9 @@
             <a class="nav-link" href="/catalog" style="color: white;">Favorites</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/catalog" style="color: white;">Community</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/about" style="color: white;">About Us</a>
           </li>
           <li class="nav-item">

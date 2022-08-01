@@ -57,6 +57,6 @@ class HomeController extends Controller
 
         $usur->save();
 
-        return view('/home')->with('success','Account created with success!');
+        return view('/home');
     }
 }

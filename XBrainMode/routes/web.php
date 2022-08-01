@@ -28,4 +28,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/catalogo', 'HomeController@catalog');
 Route::get('/register/{id}',[App\Http\Controllers\HomeController::class, 'register']);
-Route::post('/saveUsr',[App\Http\Controllers\HomeController::class, 'saveUsr']);
+Route::post('/saveUsr','HomeController@saveUsr');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
