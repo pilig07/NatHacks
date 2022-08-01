@@ -31,18 +31,15 @@
 
 <body>
 
-    @if (Auth::guest())
-    @include('layout')
-    @else
-
-    @if(Auth::user()->idRol==1)
-    @include ('layoutUs')
-    @else
-    @include ('layoutAdmin')
-    @endif
-    @endif
-    <br>
-    <br>
+@if (Auth::guest())
+@include('layout')            
+  @else
+  @if(Auth::user()->idRol==1)
+        @include ('layoutPlayer')
+    @else    
+        @include ('layoutDeveloper')
+    @endif   
+  @endif
     <br>
     <br>
     <h2 class="text-center" style="font-family: 'Open Sans Condensed', sans-serif;">What do you want to play?</h2>
@@ -52,25 +49,20 @@
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 @foreach($games as $g)
-                <div class="col">
+                <div class="col text-center">
                     <div class="card shadow-sm">
-                        @foreach($img as $i)
-                        @if($g->id == $i->idG)
-                        <img src="{{asset('storage').'/' . $i->name}}" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="{{$i->name}}">
-                        @endif
-                        @endforeach
-                        <title>{{$g->name}}</title>
-
+                    <img src="flappy.png" class="bd-placeholder-img card-img-top" width="70%" height="225">
                         <div class="card-body">
                             <div class="card-text">
                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Tittle: {{$g->tittle}}</li>
                                     <li class="list-group-item">Description: {{$g->description}}</li>
                                     <li class="list-group-item">Genre: {{$g->genre}}</li>
                                     <li class="list-group-item">Author: {{$g->author}}</li>
+                                    <li class="list-group-item"><a href="/{{$g->tittle}}" class="stretched-link">Play</a></li>
                                 </ul>
+                                <div class="d-flex justify-content-between align-items-center text-center">
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted"><a href="/game/{{$g->id}}" class="stretched-link">Play</a></small>
                             </div>
                         </div>
                     </div>

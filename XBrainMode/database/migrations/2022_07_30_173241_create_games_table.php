@@ -18,6 +18,7 @@ class CreateGamesTable extends Migration
             $table->string('description');
             $table->string('genre');
             $table->string('author');
+            $table->string('tittle');
             $table->timestamps();
         });
     }

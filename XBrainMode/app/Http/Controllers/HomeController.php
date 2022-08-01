@@ -34,13 +34,6 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function catalog()
-    {
-        $games= games::all();
-        $img= images::all();
-        return view('catalog')->with('games',$games)->with('imag',$img);
-    }
-
     public function register($id)
     {
         return view('register')->with('id',$id);

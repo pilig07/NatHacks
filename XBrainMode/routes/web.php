@@ -24,11 +24,11 @@ Route::get('/playerexp', function () { return view('playerexp');});
 Route::get('/devexp', function () { return view('devexp');});
 Route::get('/aboutus', function () { return view('aboutus');});
 Route::get('/contact', function () { return view('contact');});
-
+Route::get('/flappy', function () { return view('flappy');});
 Auth::routes();
 
+Route::get('/catalog',[App\Http\Controllers\GamesController::class, 'catalog']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/catalogo', 'HomeController@catalog');
 Route::get('/register/{id}',[App\Http\Controllers\HomeController::class, 'register']);
 Route::post('/saveUsr','HomeController@saveUsr');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

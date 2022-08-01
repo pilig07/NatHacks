@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>XBrainMode(Home Player)</title>
+  <title>XBrainMode(Player)</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,13 +44,13 @@
             <a class="nav-link active" aria-current="page" href="/" style="color: white;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login" style="color: white;">Games</a>
+            <a class="nav-link" href="/catalog" style="color: white;">Games</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/catalog" style="color: white;">Favorites</a>
+            <a class="nav-link" href="/favorites" style="color: white;">Favorites</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/catalog" style="color: white;">Community</a>
+            <a class="nav-link" href="/community" style="color: white;">Community</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/aboutus" style="color: white;">About Us</a>
