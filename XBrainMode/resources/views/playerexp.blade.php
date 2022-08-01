@@ -61,7 +61,7 @@
         @include ('layoutDeveloper')
     @endif   
   @endif
-    <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="p-5 mb-4 bg-light rounded-3 text-center">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">Are you a BCI user that wants to play some games?</h1>
         <p class="col fs-4">Be a player in XBM, it is really easy you just need to register and be part of the community</p>

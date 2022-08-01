@@ -88,6 +88,7 @@
             </div>
         </div>
     </div>
+    <br>
     @include ('footer');
 
 </body>
